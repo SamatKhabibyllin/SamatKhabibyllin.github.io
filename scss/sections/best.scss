@@ -1,0 +1,45 @@
+.best{
+    background-image: url(../img/bg/best-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+.section__title{
+    text-align: center;
+}
+.best__title{
+     padding-bottom: 50px;
+     font-size: 71.713px;
+     font-family: "Gagalin";
+     color: rgb(47, 50, 52);
+}
+.best__list{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+.best__item{
+    flex: 3;
+    text-align: center;
+}
+.best__subtitle{
+    font-size: 24px;
+    font-family: "Lifehack";
+    color: rgb(47, 50, 52);
+    line-height: 1.167;
+}
+.best__desc{
+    font-size: 14px;
+    font-family: "Ubuntu";
+    color: rgba(47, 50, 52, 0.8);
+    line-height: 1.714;
+}
+

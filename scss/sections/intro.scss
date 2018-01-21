@@ -1,0 +1,22 @@
+.intro{
+    background-image: url(../img/bg/hero_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.intro__container{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+}
+.intro__arrow{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
