@@ -663,6 +663,7 @@ a {
   line-height: 1.714; }
 
 .reviews {
+  min-height: 650px;
   height: 100vh; }
 
 .reviews-list {
