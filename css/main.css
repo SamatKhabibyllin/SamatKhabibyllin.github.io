@@ -736,6 +736,8 @@ a {
   display: inline-block;
   border-radius: 5px;
   text-transform: uppercase; }
+  .reviews__link:hover {
+    background: #1f2122; }
 
 .navigation {
   position: fixed;

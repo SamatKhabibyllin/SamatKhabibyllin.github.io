@@ -60,6 +60,9 @@
     display: inline-block;
     border-radius: 5px;
     text-transform: uppercase;
+    &:hover{
+        background: rgb(31, 33, 34);
+    }
 }
 
 
