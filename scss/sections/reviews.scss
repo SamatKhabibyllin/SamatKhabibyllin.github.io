@@ -23,6 +23,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    &:hover{
+        box-shadow:0 0 0 200px rgba(0, 0, 0, 0.7) inset;
+    }
 }
 .reviews__item:hover .reviews__desc{
     visibility: visible;
@@ -56,6 +59,7 @@
     background: rgb(47, 50, 52);
     display: inline-block;
     border-radius: 5px;
+    text-transform: uppercase;
 }
 
 

@@ -28,8 +28,11 @@ a{
     &:after {
     display: inline-block;
     vertical-align: middle;
-    content: ' ';
-    @include circle(5px, #fff);
+    content: '';
+    width: 5px;
+    height: 5px;
+    background: rgb(255, 255, 255);
+    border-radius: 50%;    
     margin-left: 16px;
 }
   &:last-child:after {
@@ -41,16 +44,22 @@ a{
     color: rgb(255, 255, 255);
     font-family: Ubuntu;
     font-weight: 400;
+    text-transform: uppercase;
 }
 .nav__button{
     width: 97px;
-    height: 35px;
+//    height: 35px;
+    padding: 13px 15px 13px 15px;
     background: rgb(228, 80, 40);
     border-radius: 5px;
     text-align: center;
-    line-height: 35px;
+    line-height: 1;
     font-size: 13px;
     color: rgb(255, 255, 255);
     font-family: Ubuntu;
     font-weight: 400;
+    text-transform: uppercase;
+    &:hover{
+        background: rgb(193, 64, 30);
+    }
 }

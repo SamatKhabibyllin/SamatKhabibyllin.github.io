@@ -9,10 +9,10 @@
 .qreeting__column{
     flex: 1;
 }
-.qreeting__column__right{
+.qreeting__column_right{
     margin-top: 50px;
 }
-.qreeting__column__left{
+.qreeting__column_left{
     margin-left: 12px;
 }
 .qreeting__title_type_orange{
@@ -20,6 +20,7 @@
     font-family: Gagalin;
     color: rgb(249, 180, 59);
     line-height: 1.181;
+    text-transform: uppercase;
 }
 .qreeting__title_type_white{
     font-family: Lifehack;

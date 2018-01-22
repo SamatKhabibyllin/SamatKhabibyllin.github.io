@@ -488,7 +488,10 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .intro__arrow {
   display: -webkit-flex;
@@ -538,11 +541,11 @@ a {
   .nav__item:after {
     display: inline-block;
     vertical-align: middle;
-    content: ' ';
+    content: '';
     width: 5px;
     height: 5px;
-    border-radius: 2.5px;
-    background-color: #fff;
+    background: white;
+    border-radius: 50%;
     margin-left: 16px; }
   .nav__item:last-child:after {
     display: none; }
@@ -551,19 +554,23 @@ a {
   font-size: 13px;
   color: white;
   font-family: Ubuntu;
-  font-weight: 400; }
+  font-weight: 400;
+  text-transform: uppercase; }
 
 .nav__button {
   width: 97px;
-  height: 35px;
+  padding: 13px 15px 13px 15px;
   background: #e45028;
   border-radius: 5px;
   text-align: center;
-  line-height: 35px;
+  line-height: 1;
   font-size: 13px;
   color: white;
   font-family: Ubuntu;
-  font-weight: 400; }
+  font-weight: 400;
+  text-transform: uppercase; }
+  .nav__button:hover {
+    background: #c1401e; }
 
 .qreeting__container {
   display: -webkit-flex;
@@ -582,17 +589,18 @@ a {
   -ms-flex: 1;
   flex: 1; }
 
-.qreeting__column__right {
+.qreeting__column_right {
   margin-top: 50px; }
 
-.qreeting__column__left {
+.qreeting__column_left {
   margin-left: 12px; }
 
 .qreeting__title_type_orange {
   font-size: 72px;
   font-family: Gagalin;
   color: #f9b43b;
-  line-height: 1.181; }
+  line-height: 1.181;
+  text-transform: uppercase; }
 
 .qreeting__title_type_white {
   font-family: Lifehack;
@@ -624,9 +632,10 @@ a {
   padding-bottom: 50px;
   font-size: 71.713px;
   font-family: "Gagalin";
-  color: #2f3234; }
+  color: #2f3234;
+  text-transform: uppercase; }
 
-.best__list {
+.best-list {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -690,6 +699,9 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+  .reviews__item:hover {
+    -webkit-box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.7) inset;
+    box-shadow: 0 0 0 200px rgba(0, 0, 0, 0.7) inset; }
 
 .reviews__item:hover .reviews__desc {
   visibility: visible; }
@@ -722,7 +734,8 @@ a {
   text-align: center;
   background: #2f3234;
   display: inline-block;
-  border-radius: 5px; }
+  border-radius: 5px;
+  text-transform: uppercase; }
 
 .navigation {
   position: fixed;
