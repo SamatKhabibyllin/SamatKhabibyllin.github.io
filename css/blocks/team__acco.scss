@@ -13,7 +13,7 @@
 }
 .team__acco-item--active{
     .team__acco-title{
-        color: yellow;
+        color: $yellow;
         &:before{
             transform: rotate(180deg);
         }

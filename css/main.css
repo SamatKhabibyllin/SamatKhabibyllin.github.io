@@ -500,6 +500,9 @@ footer {
 .section {
   height: 100vh;
   min-height: 40.625rem; }
+  @media screen and (max-width: 480px) {
+    .section {
+      min-height: 100vh; } }
 
 a {
   text-decoration: none; }
@@ -680,6 +683,9 @@ a {
       -ms-flex-direction: column;
       flex-direction: column;
       padding-top: 15px; } }
+  @media screen and (max-width: 480px) {
+    .hero__content {
+      padding-top: 0; } }
 
 .hero__pic, .hero__desc {
   width: 50%; }
@@ -869,7 +875,7 @@ a {
       align-items: center; } }
 
 .team__acco-item--active .team__acco-title {
-  color: yellow; }
+  color: #f9b43b; }
   .team__acco-item--active .team__acco-title:before {
     -webkit-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
@@ -960,10 +966,32 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   width: 5rem;
-  cursor: pointer; }
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 40px;
+  font-family: "Gagalin";
+  text-transform: uppercase; }
   @media screen and (max-width: 480px) {
     .menu-acco__item {
       width: 3.125rem; } }
+
+.acco__title {
+  color: white;
+  text-align: center;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg); }
 
 .acco__text {
   width: 0;
@@ -1078,7 +1106,8 @@ a {
   display: -ms-flexbox;
   display: flex;
   margin-top: 2.1875rem;
-  font-size: 0.875rem; }
+  font-size: 0.875rem;
+  font-weight: 300; }
   @media screen and (max-width: 768px) {
     .form {
       -webkit-box-orient: vertical;
@@ -1138,6 +1167,9 @@ a {
       .form__block:first-child {
         margin-left: 0; } }
 
+.form__title {
+  cursor: pointer; }
+
 .form__input {
   height: 2.1875rem;
   border-radius: 0.3125rem;
@@ -1178,6 +1210,9 @@ a {
   align-items: center;
   margin-right: 1.25rem; }
 
+.radio__title {
+  cursor: pointer; }
+
 .radio__input {
   margin-right: 0.625rem; }
 
@@ -1206,7 +1241,8 @@ a {
   margin-right: 0.625rem; }
 
 .checkbox__title {
-  line-height: 1; }
+  line-height: 1;
+  cursor: pointer; }
 
 .map {
   background: url(/img/content/map.jpg) center center no-repeat;

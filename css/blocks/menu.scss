@@ -19,10 +19,25 @@
     background-size: cover;
     width: rem(80px);
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: "Gagalin";
+    text-transform: uppercase;
     @include phones{
         width: rem(50px);
     }
 }
+.acco__title{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    transform-origin: center;
+    transform: rotate(-90deg);
+}
+//.acco__title--active{
+//    color: $yellow;
+//}
 .acco__text{
     width: 0;
     overflow: hidden;
@@ -35,3 +50,4 @@
 //    font-size: rem(14px);
 //    color: rgb(255, 255, 255);
 //}
+
