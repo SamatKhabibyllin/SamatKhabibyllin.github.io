@@ -1,0 +1,17 @@
+.ham__btn{
+    margin-left: rem(25px);
+    display: none;
+    @include tablets{
+        display: block;
+    }
+}
+.ham__btn-decor{
+    width: rem(30px);
+    height: rem(6px);
+    border-radius: 3px;
+    margin-bottom: rem(5px);
+    background: rgb(255, 255, 255);
+    &:last-child{
+        margin-bottom: 0;
+    }
+}

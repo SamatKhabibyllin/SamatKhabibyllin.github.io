@@ -1,0 +1,15 @@
+.radio{
+    display: flex;
+    margin-bottom: rem(20px);
+    @include phones{
+        justify-content: center;
+    }
+}
+.radio__block{
+    display: flex;
+    align-items: center;
+    margin-right: rem(20px);
+}
+.radio__input{
+    margin-right: rem(10px);
+}

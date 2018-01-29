@@ -1,0 +1,30 @@
+.section__title{
+    font-size: rem(72px);
+    font-family: 'Gagalin';
+    line-height: 1;
+    margin: 0;
+    @include phones{
+        font-size: rem(60px);
+    }
+}
+.section__title_color_yellow{
+    color: $yellow;
+}
+.section__title_margin_bottom{
+    @include tablets{
+        margin-bottom: 0;
+    }
+    margin-bottom: rem(25px);
+}
+.section__title_color_black{
+    color: $black;
+}
+.section__title_align_center{
+    text-align: center;
+}
+.section__title_padding_bottom{
+    padding-bottom: rem(40px);
+}
+.section__title_color_white{
+    color: rgb(255, 255, 255);
+}

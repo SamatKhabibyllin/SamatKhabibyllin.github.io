@@ -1,0 +1,77 @@
+.order{
+    background: url(../img/bg/order.jpg) center center no-repeat;
+    background-size: cover;
+}
+.order__container{
+    height: 100%;
+}
+.form{
+    color: rgb(255, 255, 255);
+    display: flex;
+    margin-top: rem(35px);
+    font-size: rem(14px);
+    @include tablets{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.form__left,.form__right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    @include tablets{
+        width: 70%;
+    }
+    @include phones{
+        width: 95%;
+    }
+}
+.form__left{
+    margin-right: rem(20px);
+    @include tablets{
+        margin-right: 0;
+    }
+}
+.form__row{
+    display: flex;
+    margin-bottom: rem(20px);
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+.form__btns{
+    @include phones{
+        text-align: center;
+    }
+}
+.form__block{
+    display: block;
+    flex: 1;
+    margin-right: rem(20px);
+    
+    &:last-child{
+        margin-right: 0;
+    }
+    @include phones{
+        margin-right: 0;
+        margin-left: rem(20px);
+        
+        &:first-child{
+            margin-left: 0;
+        }
+    }
+}
+.form__input{
+    height: rem(35px);
+    border-radius: rem(5px);
+    width: 100%;
+    border: 0;
+}
+.floor{
+    @include phones{
+        display: none;
+    }
+}
+
+
+

@@ -1,0 +1,37 @@
+.menu{
+    background: url(/img/bg/bg-menu-section.jpg) center center no-repeat;
+    background-size: cover;
+    display: flex;
+}
+.menu__title-container{
+    padding: rem(110px) 0 0 rem(90px);
+    @include tablets{
+        padding-left: rem(20px);
+    }
+}
+.menu-acco{
+    margin-left: auto;
+    display: flex;
+}
+.menu-acco__item{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: rem(80px);
+    cursor: pointer;
+    @include phones{
+        width: rem(50px);
+    }
+}
+.acco__text{
+    width: 0;
+    overflow: hidden;
+}
+//.acco__text--active{
+//    max-width: rem(540px);
+//    width: auto;
+//    padding: rem(60px) rem(80px) 0 rem(30px);
+//    background: rgba(47, 50, 52, .93);
+//    font-size: rem(14px);
+//    color: rgb(255, 255, 255);
+//}

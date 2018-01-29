@@ -1,0 +1,25 @@
+.submit{
+    margin-top: rem(20px);
+}
+.order__form-button{
+    display: inline-block;
+    padding: rem(10px) rem(15px) rem(10px) rem(15px);
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    border-radius: rem(5px);
+    background: rgb(228, 80, 40);
+    border: 0;
+    font-weight: 400;
+    cursor: pointer;
+    font-size: rem(13px);
+}
+.order__form-button_hover{
+    &:hover{
+        background: rgb(193, 64, 30);
+    }
+}
+.order__form-button_reset{
+    background: transparent;
+}
+
+

@@ -1,0 +1,43 @@
+//vars
+$yellow: rgb(249, 180, 59);
+$black: rgb(47, 50, 52);
+
+// resolutions
+$tablets: 768px;
+$phones: 480px;
+
+//normalize
+@import "_misc/normalize";
+
+//adaptive
+@import "_misc/media";
+
+//setups
+@import "_misc/mixin";
+@import "_misc/_font";
+@import "_misc/layout";
+@import "_misc/common-styles";
+
+
+//blocks
+@import "blocks/section-title";
+@import "blocks/btns";
+@import "blocks/hero";
+@import "blocks/header";
+@import "blocks/hero__content";
+@import "blocks/best";
+@import "blocks/best__content";
+@import "blocks/team";
+@import "blocks/team__acco";
+@import "blocks/menu";
+@import "blocks/reviews-list";
+@import "blocks/order";
+@import "blocks/textarea";
+@import "blocks/radio";
+@import "blocks/checkbox";
+@import "blocks/map";
+@import "blocks/submit";
+@import "blocks/icon";
+@import "blocks/footer";
+@import "blocks/hamburger";
+@import "blocks/navigation";

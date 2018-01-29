@@ -1,0 +1,17 @@
+.checkbox{
+    display: flex;
+    align-items: flex-end;
+    @include phones{
+        justify-content: center;
+    }
+}
+.checkbox__block{
+    display: flex;
+    align-items: flex-end;
+}
+.checkbox__input{
+    margin-right: rem(10px);
+}
+.checkbox__title{
+    line-height: 1;
+}

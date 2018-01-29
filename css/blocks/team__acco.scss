@@ -1,0 +1,76 @@
+.team__content{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.team__acco-item{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: rem(25px);
+    @include tablets{
+        align-items: center;
+    }
+}
+.team__acco-item--active{
+    .team__acco-title{
+        color: yellow;
+        &:before{
+            transform: rotate(180deg);
+        }
+    }
+    .team__acco-content{
+        height: auto;
+    }
+}
+.team__acco-content{
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    margin-left: rem(20px);
+    margin-top: rem(15px);
+    @include tablets{
+        flex-direction: column;
+        margin-left: 0;
+        align-items: center;
+    }
+}
+.team__acco-title{
+    font-size: rem(14px);
+    color: rgb(255, 255, 255);
+    font-family: 'Gagalin';
+    display: flex;
+    align-items: center;
+    &:before{
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        border: rem(9px) solid transparent;
+        border-top-color: $yellow;
+        border-bottom-width: 0;
+        margin-right: 10px;
+    }
+    @include tablets{
+        font-size: rem(26px);
+    }
+}
+
+.team__acco-desc{
+    width: 50%;
+    margin-left: rem(20px);
+    @include tablets{
+        margin: 0;
+        text-align: center;
+        width: 65%;
+    }
+}
+.team__acco-article-title,.team__acco-article-text{
+    color: rgb(255, 255, 255);
+    font-size: rem(14px);
+}
+.team__acco-article-text{
+    p{
+        line-height: 1.8;
+    }
+}
+

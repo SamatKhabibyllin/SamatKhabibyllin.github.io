@@ -1,0 +1,59 @@
+.best-list{
+    display: flex;
+    justify-content: space-between;
+    margin-top: rem(40px);
+    @include phones{
+        flex-direction: column;
+    }
+}
+.best__item{
+    width: 28%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include phones{
+        flex-direction: row;
+         width: 100%;
+    }
+}
+.best__info{
+    text-align: center;
+    @include phones{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-left: rem(20px);
+    }
+}
+.best__pic{
+    display: flex;
+    justify-content: center;
+    width: rem(100px);
+    height: rem(90px);
+    margin-bottom: rem(10px);
+}
+.best__icon{
+    &_fill_red{
+        fill: rgb(226, 80, 40);
+    }
+    &_fill_yellow{
+        fill: rgb(248, 180, 58);
+    }
+    &_fill_green{
+        fill: rgb(138, 192, 62);
+    }
+}
+.best__title{
+    font-family: 'Lifehack';
+    font-size: rem(24px);
+    color: $black;
+    padding-bottom: rem(25px);
+    padding-top: rem(20px);
+}
+.best__desc{
+    color: $black;
+    font-size: rem(14px);
+    color: rgba(47, 50, 52, 0.8);
+}
+
+

@@ -1,0 +1,31 @@
+.navigation{
+    position: fixed;
+    left: 1159px;
+    top: 97px;
+    @include tablets{
+        display: none;
+    }
+}
+.navigation__item{
+    width: 16px;
+    height: 16px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    text-align: center;
+    margin-bottom: 7px;
+}
+.navigation__item_active{
+    width: 16px;
+    height: 16px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    text-align: center;
+}
+.navigation__link{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    display: inline-block;
+    margin-bottom: 6px;
+}

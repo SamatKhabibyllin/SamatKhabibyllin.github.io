@@ -1,0 +1,55 @@
+.footer{
+    background: url(/img/bg/footer-bg.jpg) center center no-repeat;
+    background-size: cover;
+    height: rem(80px);
+    position: absolute;
+    bottom: 0;
+    @include phones{
+        height: auto;
+    }
+}
+.footer__container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    @include phones{
+        flex-direction: column;
+        padding: 20px 0 20px 0;
+    }
+}
+.footer__left,.footer__right{
+    width: 50%;
+    @include phones{
+        width: 100%;
+    }
+}
+.footer__left{
+    @include phones{
+        text-align: center;
+    }
+}
+.footer__right{
+    display: flex;
+    justify-content: flex-end;
+    @include phones{
+        justify-content: center;
+        margin-top: rem(20px);
+    }
+}
+.footer__adress{
+    color: rgb(255, 255, 255);
+    font-size: rem(14px);
+    margin-bottom: rem(10px);
+    @include phones{
+        font-size: rem(18px);
+    }
+}
+.footer__tel{
+    font-size: rem(14px);
+    color: rgb(227, 80, 40);
+    @include phones{
+        font-size: rem(20px);
+        font-weight: 500;
+    }
+}

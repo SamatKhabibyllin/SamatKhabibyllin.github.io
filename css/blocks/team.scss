@@ -1,0 +1,25 @@
+.team{
+    background: url(../img/bg/bg-team.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+    .section__title{
+        @include tablets{
+            text-align: center;
+        }
+    }
+}
+.team__container{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    width: 50%;
+    background: rgba(47, 50, 52, .93);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @include tablets{
+        width: 100%;
+    }
+}

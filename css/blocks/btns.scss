@@ -1,0 +1,18 @@
+.btn{
+    padding: rem(11px) rem(20px);
+    text-transform: uppercase;
+    font-size: rem(13px);
+    color: rgb(255, 255, 255);
+    line-height: 1;
+    background: #e45028;
+    border-radius: rem(5px);
+    display: inline-block;
+    max-width: rem(120px);
+    text-align: center;
+}
+.btn_bg_color_grey{
+    background: rgb(47, 50, 52);
+    &:hover{
+        background: rgb(31, 33, 34);
+    }
+}
