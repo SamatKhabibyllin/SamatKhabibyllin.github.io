@@ -9,8 +9,22 @@
     display: flex;
     align-items: flex-end;
 }
-.checkbox__input{
+.box--active{
     margin-right: rem(10px);
+    width: rem(15px);
+    height: rem(15px);
+    background: rgb(255, 255, 255);
+    position: relative;
+    &:before{
+        content: '';
+        width: rem(10px);
+        height: rem(5px);
+        border-bottom: rem(3px) solid rgb(228, 80, 40);
+        border-left: rem(3px) solid rgb(228, 80, 40);
+        position: absolute;
+        transform: rotate(315deg);
+        margin-left: rem(1px);
+    }
 }
 .checkbox__title{
     line-height: 1;
