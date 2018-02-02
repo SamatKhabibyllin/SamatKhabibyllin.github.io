@@ -1,0 +1,112 @@
+.carousel{
+    background: url(/img/bg/carousel.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.carousel-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+     @include tablets{
+        .section__title{
+            width: 60%;
+            font-size: rem(60px);
+        }
+    }
+    @include phones{
+        .section__title{
+            width: 80%;
+            font-size: rem(50px);
+        }
+    }
+}
+.carousel__item{
+    display: flex;
+    @include tablets{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.carousel__pic{
+    @include tablets{
+        max-width: 98%;
+    }
+}
+.carousel__desc{
+    margin-left: rem(20px);
+    @include tablets{
+        margin-left: 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: rem(20px);
+    }
+}
+.carousel__text{
+    margin-top: rem(40px);
+    @include tablets{
+        text-align: center;
+        width: 80%;
+        margin-top: rem(20px);
+    }
+    p{
+       font-size: rem(14px);
+       color: rgb(255, 255, 255);
+    }
+}
+.carousel__bottom{
+    display: flex;
+    align-items: flex-end;
+    margin-top: rem(30px);
+}
+.price-num{
+    font-size: rem(72px);
+    font-family: 'Gagalin';
+    color: rgb(227, 80, 40);
+    line-height: 1;
+    @include tablets{
+        font-size: rem(50px);
+    }
+}
+.price-rub{
+    font-family: 'Gagalin';
+    color: rgb(227, 80, 40);
+    font-size: rem(34px);
+    line-height: 1;
+    @include tablets{
+        font-size: rem(25px);
+    }
+}
+.btn__carosel{
+    padding: rem(8px) rem(15px) rem(8px) rem(15px);
+    color: rgb(255, 255, 255);
+    background: rgb(228, 80, 40);
+    border-radius: 5px;
+    margin-left: rem(30px);
+    &:hover{
+        background: rgb(193, 64, 30);
+    }
+}
+.arrow__left,.arrow__right{
+    display: inline-block;
+    width: rem(20px);
+    height: rem(20px);
+    border-top: rem(2px) solid rgb(255, 255, 255);
+    border-right: rem(2px) solid rgb(255, 255, 255);
+    background: transparent;
+    position: absolute;
+    border-radius: rem(3px);
+    top: 50%;
+    margin-top: -5px;
+}
+.arrow__left{
+    left: 10%;
+    transform: rotate(225deg);
+}
+.arrow__right{
+    right: 10%;
+    transform: rotate(45deg);
+}
