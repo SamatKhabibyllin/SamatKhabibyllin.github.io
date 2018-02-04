@@ -24,6 +24,9 @@
         position: absolute;
         transform: rotate(315deg);
         margin-left: rem(1px);
+        @include phones{
+            right: rem(1px);
+        }
     }
 }
 .checkbox__title{

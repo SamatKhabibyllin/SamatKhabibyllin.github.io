@@ -1,9 +1,13 @@
 .ham__btn{
     margin-left: rem(25px);
     display: none;
+    z-index: 2;
     @include tablets{
         display: block;
     }
+}
+.ham__btn--active{
+    
 }
 .ham__btn-decor{
     width: rem(30px);

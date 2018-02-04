@@ -1,0 +1,42 @@
+.arrow-left{
+    display: inline-block;
+    width: rem(20px);
+    height: rem(20px);
+    background: transparent;
+    transform: rotate(225deg);
+    position: absolute;
+    border-radius: rem(3px);
+    border-top: rem(2px) solid rgb(255, 255, 255);
+    border-right: rem(2px) solid rgb(255, 255, 255);
+    top: 50%;
+    margin-top: rem(-10px);
+    right: 100%;
+    cursor: pointer;
+    @include tablets{
+        left: 1%;
+    }
+    @include phones{
+        left: 2%;
+    }
+}
+.arrow-right{
+    display: inline-block;
+    width: rem(20px);
+    height: rem(20px);
+    background: transparent;
+    transform: rotate(45deg);
+    position: absolute;
+    border-radius: rem(3px);
+    border-top: rem(2px) solid rgb(255, 255, 255);
+    border-right: rem(2px) solid rgb(255, 255, 255);
+    top: 50%;
+    margin-top: rem(-10px);
+    left: 100%;
+    cursor: pointer;
+    @include tablets{
+        left: 96%;
+    }
+    @include phones{
+        left: 93%;
+    }
+}
