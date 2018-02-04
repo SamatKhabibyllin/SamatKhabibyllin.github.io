@@ -1260,7 +1260,8 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin-right: 1.25rem; }
+  margin-right: 1.25rem;
+  cursor: pointer; }
 
 .radio__title {
   cursor: pointer; }
@@ -1268,7 +1269,7 @@ a {
 .radio__input {
   margin-right: 0.625rem; }
 
-.circle--active {
+.circle {
   margin-right: 0.625rem;
   height: 0.9375rem;
   width: 0.9375rem;
@@ -1276,17 +1277,6 @@ a {
   background: white;
   position: relative;
   cursor: pointer; }
-  .circle--active:before {
-    content: '';
-    background: #e45028;
-    width: 0.4375rem;
-    height: 0.4375rem;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    margin-top: -0.21875rem;
-    left: 50%;
-    margin-left: -0.21875rem; }
 
 .circle {
   margin-right: 0.625rem;
@@ -1295,6 +1285,20 @@ a {
   border-radius: 50%;
   background: white;
   position: relative; }
+
+.circle__small {
+  background: transparent;
+  width: 0.4375rem;
+  height: 0.4375rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  margin-top: -0.21875rem;
+  left: 50%;
+  margin-left: -0.21875rem; }
+
+.circle__small--active {
+  background: #e45028; }
 
 .checkbox {
   display: -webkit-box;
@@ -1315,7 +1319,8 @@ a {
   display: flex;
   -webkit-box-align: end;
   -ms-flex-align: end;
-  align-items: flex-end; }
+  align-items: flex-end;
+  cursor: pointer; }
 
 .box--active {
   margin-right: 0.625rem;
@@ -1323,20 +1328,25 @@ a {
   height: 0.9375rem;
   background: white;
   position: relative; }
-  .box--active:before {
-    content: '';
-    width: 0.625rem;
-    height: 0.3125rem;
-    border-bottom: 0.1875rem solid #e45028;
-    border-left: 0.1875rem solid #e45028;
-    position: absolute;
-    -webkit-transform: rotate(315deg);
-    -ms-transform: rotate(315deg);
-    transform: rotate(315deg);
-    margin-left: 0.0625rem; }
-    @media screen and (max-width: 480px) {
-      .box--active:before {
-        right: 0.0625rem; } }
+
+.check {
+  width: 0.875rem;
+  height: 0.4375rem;
+  top: 0.125rem;
+  border-bottom: 0.1875rem solid #e45028;
+  border-left: 0.1875rem solid #e45028;
+  position: absolute;
+  -webkit-transform: rotate(315deg);
+  -ms-transform: rotate(315deg);
+  transform: rotate(315deg);
+  margin-left: 0.0625rem;
+  display: none; }
+  @media screen and (max-width: 480px) {
+    .check {
+      right: 0.0625rem; } }
+
+.check--active {
+  display: inline-block; }
 
 .checkbox__title {
   line-height: 1;
@@ -1657,18 +1667,6 @@ a {
   top: 50%;
   margin-top: -5px; }
 
-.arrow__left {
-  left: 10%;
-  -webkit-transform: rotate(225deg);
-  -ms-transform: rotate(225deg);
-  transform: rotate(225deg); }
-
-.arrow__right {
-  right: 10%;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg); }
-
 .icon-composition {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1679,26 +1677,36 @@ a {
   flex-direction: column;
   position: absolute;
   left: 3%;
-  bottom: 92%;
+  bottom: 94%;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 1%;
   background: #f08c33;
-  border-radius: 5px;
-  cursor: pointer; }
+  border-radius: 0.3125rem;
+  cursor: pointer;
+  width: 5.3125rem;
+  height: 5.3125rem; }
   @media screen and (max-width: 768px) {
     .icon-composition {
       top: 2%;
       left: 2%; } }
+  @media screen and (max-width: 480px) {
+    .icon-composition {
+      width: 3.75rem;
+      height: 3.75rem; } }
 
 .icon-carousel-burger {
-  width: 3.125rem;
-  height: 3.125rem;
+  width: 2.8125rem;
+  height: 2.8125rem;
+  display: inline-block;
   fill: white; }
+  @media screen and (max-width: 480px) {
+    .icon-carousel-burger {
+      width: 2.5rem;
+      height: 2.5rem; } }
 
 .icon-composition-title {
   color: white;
@@ -1749,6 +1757,18 @@ a {
 
 .icon-kal__kkal {
   font-size: 0.875rem; }
+
+.arrow__left {
+  left: 10%;
+  -webkit-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  transform: rotate(225deg); }
+
+.arrow__right {
+  right: 10%;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
 
 .arrow-left {
   display: inline-block;

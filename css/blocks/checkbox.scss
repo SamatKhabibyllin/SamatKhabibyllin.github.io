@@ -8,6 +8,7 @@
 .checkbox__block{
     display: flex;
     align-items: flex-end;
+    cursor: pointer;
 }
 .box--active{
     margin-right: rem(10px);
@@ -15,19 +16,23 @@
     height: rem(15px);
     background: rgb(255, 255, 255);
     position: relative;
-    &:before{
-        content: '';
-        width: rem(10px);
-        height: rem(5px);
+}
+.check{
+        width: rem(14px);
+        height: rem(7px);
+        top: rem(2px);
         border-bottom: rem(3px) solid rgb(228, 80, 40);
         border-left: rem(3px) solid rgb(228, 80, 40);
         position: absolute;
         transform: rotate(315deg);
         margin-left: rem(1px);
+        display: none;
         @include phones{
             right: rem(1px);
         }
-    }
+}
+.check--active{
+    display: inline-block;
 }
 .checkbox__title{
     line-height: 1;

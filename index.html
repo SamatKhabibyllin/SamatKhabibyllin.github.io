@@ -157,7 +157,7 @@
                                    </div>
                                </div>
                            </li>
-                           <li class="team__acco-item team__acco-item--active">
+                           <li class="team__acco-item">
                                <a href="#" class="team__acco-title">ричард джеймс</a>
                                <div class="team__acco-content">
                                    <div class="team__acco-pic">
@@ -385,24 +385,30 @@
                            </div>
                            <div class="form__btns">
                                <div class="radio">
-                                   <label for="cash" class="radio__block">
-                                       <div class="circle"></div>
+                                   <label for="cash" class="cash radio__block">
+                                       <div class="circle">
+                                           <div class="circle__small-cash circle__small"></div>
+                                       </div>
                                        <div class="radio__title">Потребуется сдача</div>
                                    </label>
-                                   <label for="card" class="radio__block">
-                                       <div class="circle circle--active"></div>
+                                   <label for="card" class="card radio__block">
+                                       <div class="circle">
+                                           <div class="circle__small-card circle__small"></div>
+                                       </div>
                                        <div class="radio__title">Оплата по карте</div>
                                    </label>
                                </div>
                                <div class="checkbox">
                                    <label for="call" class="checkbox__block">
-                                       <div class="box box--active"></div>
+                                       <div class="box--active box">
+                                           <div class="check"></div>
+                                       </div>
                                        <div class="checkbox__title">Не перезванивать</div>
                                    </label>
                                </div>
                                <div class="submit">
                                    <input class="order__form-button order__form-button_hover" name="" type="submit" value="заказать">
-                                   <input class="order__form-button order__form-button_reset" name="" type="reset" value="очистить">
+                                   <input class="order__form-button_reset order__form-button" name="" type="reset" value="очистить">
                                </div>
                            </div>
                        </div>

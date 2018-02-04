@@ -3,22 +3,33 @@
     flex-direction: column;
     position: absolute;
     left: 3%;
-    bottom: 92%;
+    bottom: 94%;
     align-items: center;
     justify-content: center;
-    padding: 1%;
     background: rgb(240, 140, 51);
-    border-radius: 5px;
+    border-radius: rem(5px);
     cursor: pointer;
+    width: rem(85px);
+    height: rem(85px);
     @include tablets{
         top: 2%;
         left: 2%;
     }
+    @include phones{
+        width: rem(60px);
+        height: rem(60px);
+    }
 }
 .icon-carousel-burger{
-    width: rem(50px);
-    height: rem(50px);
+    width: rem(45px);
+    height: rem(45px);
+    display: inline-block;
     fill: rgb(255, 255, 255);
+    @include phones{
+        width: rem(40px);
+        height: rem(40px);
+    }
+    
 }
 .icon-composition-title{
     color: rgb(255, 255, 255);

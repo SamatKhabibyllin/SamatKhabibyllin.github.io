@@ -1,3 +1,11 @@
+.arrow__left{
+    left: 10%;
+    transform: rotate(225deg);
+}
+.arrow__right{
+    right: 10%;
+    transform: rotate(45deg);
+}
 .arrow-left{
     display: inline-block;
     width: rem(20px);

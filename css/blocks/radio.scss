@@ -9,6 +9,7 @@
     display: flex;
     align-items: center;
     margin-right: rem(20px);
+    cursor: pointer;
 }
 .radio__title{
     cursor: pointer;
@@ -16,7 +17,7 @@
 .radio__input{
     margin-right: rem(10px);
 }
-.circle--active{
+.circle{
     margin-right: rem(10px);
     height: rem(15px);
     width: rem(15px);
@@ -24,18 +25,6 @@
     background: rgb(255, 255, 255);
     position: relative;
     cursor: pointer;
-    &:before{
-        content: '';
-        background: rgb(228, 80, 40);
-        width: rem(7px);
-        height: rem(7px);
-        border-radius: 50%;
-        position: absolute;
-        top: 50%;
-        margin-top: rem(-3.5px);
-        left: 50%;
-        margin-left: rem(-3.5px);
-    }
 }
 .circle{
      margin-right: rem(10px);
@@ -44,4 +33,18 @@
     border-radius: 50%;
     background: rgb(255, 255, 255);
     position: relative;
+}
+.circle__small{
+    background: transparent;
+    width: rem(7px);
+    height: rem(7px);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    margin-top: rem(-3.5px);
+    left: 50%;
+    margin-left: rem(-3.5px);
+}
+.circle__small--active{
+    background: rgb(228, 80, 40);
 }
