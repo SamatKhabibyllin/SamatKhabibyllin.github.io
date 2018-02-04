@@ -3,7 +3,9 @@ var ham = document.querySelector('.ham__btn');
 var nav = document.querySelector('.nav-list');
 var navItem = document.querySelectorAll('ul > .nav__item');
 var navLink = document.querySelectorAll('li > .nav__link');
-
+var hamDecorNone = document.querySelector('.ham__btn-decor_display')
+var hamCloseOne = document.querySelector('.ham__btn-decor_transform_1');
+var hamCloseTwo = document.querySelector('.ham__btn-decor_transform_2');
 
 ham.addEventListener('click', function(e){
    e.preventDefault();    
@@ -12,6 +14,9 @@ ham.addEventListener('click', function(e){
        navItem[i].classList.toggle('nav__item--active');
        navLink[i].classList.toggle('nav__link--active');
    };
+    hamDecorNone.classList.toggle('ham__btn-decor_display_none');
+    hamCloseOne.classList.toggle('ham__btn-decor_transform_rotate_1');
+    hamCloseTwo.classList.toggle('ham__btn-decor_transform_rotate_2');
 });
 
 //menu acco

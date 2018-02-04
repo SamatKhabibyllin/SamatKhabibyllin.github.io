@@ -6,9 +6,6 @@
         display: block;
     }
 }
-.ham__btn--active{
-    
-}
 .ham__btn-decor{
     width: rem(30px);
     height: rem(6px);
@@ -18,4 +15,16 @@
     &:last-child{
         margin-bottom: 0;
     }
+}
+.ham__btn-decor_display_none{
+    display: none;
+}
+.ham__btn-decor_transform_rotate_1{
+    margin-bottom: 0;
+    transform: rotate(45deg);
+    position: absolute;
+}
+.ham__btn-decor_transform_rotate_2{
+    margin-bottom: 0;
+    transform: rotate(135deg);
 }
