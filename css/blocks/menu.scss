@@ -45,6 +45,9 @@
 .acco__text{
     width: 0;
     overflow: hidden;
+    @include tablets{
+        font-size: rem(12px);
+    }
 }
 .acco__text--active{
     max-width: rem(540px);

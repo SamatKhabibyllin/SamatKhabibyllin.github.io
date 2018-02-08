@@ -1,0 +1,35 @@
+.composition-hover{
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 100%;
+    background: rgba(255, 255, 255, .9);
+    padding: rem(15px) rem(20px);
+    border-radius: rem(5px);
+    width: rem(270px);
+    opacity: 1;
+}
+.composition-hover-list{
+    width: 100%;
+}
+.composition-hover__item{
+    display: flex;
+    align-items: center;
+    margin-bottom: rem(15px);
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+.composition-hover__title{
+    font-size: rem(14px);
+    color: rgb(47, 50, 52);
+    font-weight: 500;
+    margin-left: rem(25px);
+}
+.composition-hover__weight{
+    margin-left: auto;
+    font-size: rem(14px);
+    color: rgb(47, 50, 52);
+}
+
+

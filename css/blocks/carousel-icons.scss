@@ -11,6 +11,11 @@
     cursor: pointer;
     width: rem(85px);
     height: rem(85px);
+    &:hover{
+        .composition-hover{
+           display: flex;
+        }
+    }
     @include tablets{
         top: 2%;
         left: 2%;
@@ -29,7 +34,6 @@
         width: rem(40px);
         height: rem(40px);
     }
-    
 }
 .icon-composition-title{
     color: rgb(255, 255, 255);
@@ -74,5 +78,10 @@
     font-size: rem(14px);
 }
 
+//composition-hover icons
+.composition-icon{
+    width: rem(35px);
+    height: rem(35px);
+}
 
 

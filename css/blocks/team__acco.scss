@@ -2,6 +2,8 @@
     width: 70%;
     display: flex;
     flex-direction: column;
+    height: 100%;
+    padding-top: rem(100px);
 }
 .team__acco-item{
     display: flex;
@@ -16,14 +18,18 @@
         color: $yellow;
         &:before{
             transform: rotate(180deg);
+            transition: all .5s;
         }
     }
     .team__acco-content{
         height: auto;
+        opacity: 1;
+        transition: all .5s;
     }
 }
 .team__acco-content{
     height: 0;
+    opacity: 0;
     overflow: hidden;
     display: flex;
     margin-left: rem(20px);
@@ -67,6 +73,12 @@
 .team__acco-article-title,.team__acco-article-text{
     color: rgb(255, 255, 255);
     font-size: rem(14px);
+}
+.team__acco-article-title{
+    @include tablets{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 }
 .team__acco-article-text{
     p{

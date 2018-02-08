@@ -21,12 +21,49 @@ ham.addEventListener('click', function(e){
 
 //team acco
 var teamLink = document.querySelectorAll('li > .team__acco-title');
+var teamItem = document.querySelectorAll('ul > .team__acco-item');
 for(n = 0; n < 4; n++){
     teamLink[n].addEventListener('click', function(e){
-       e.preventDefault();
-        console.log('click'); 
+        e.preventDefault();
+        for(m = 0; m < 4; m++){
+            
+        };
     });
 };
+
+var teamDr = document.querySelector('.team__acco-item__dr');
+var linkDr = document.querySelector('.team__acco-title__dr');
+var teamRd = document.querySelector('.team__acco-item__rd');
+var linkRd = document.querySelector('.team__acco-title__rd');
+var teamDf = document.querySelector('.team__acco-item__df');
+var linkDf = document.querySelector('.team__acco-title__df');
+var teamNi = document.querySelector('.team__acco-item__ni');
+var linkNi = document.querySelector('.team__acco-title__ni');
+
+linkDr.addEventListener('click', function(e){
+    teamDr.classList.toggle('team__acco-item--active');
+    teamRd.classList.remove('team__acco-item--active');
+    teamDf.classList.remove('team__acco-item--active');
+    teamNi.classList.remove('team__acco-item--active');
+});
+linkRd.addEventListener('click', function(e){
+    teamRd.classList.toggle('team__acco-item--active');
+    teamDr.classList.remove('team__acco-item--active');
+    teamDf.classList.remove('team__acco-item--active');
+    teamNi.classList.remove('team__acco-item--active');
+});
+linkDf.addEventListener('click', function(e){
+    teamDf.classList.toggle('team__acco-item--active');
+    teamDr.classList.remove('team__acco-item--active');
+    teamRd.classList.remove('team__acco-item--active');
+    teamNi.classList.remove('team__acco-item--active');
+});
+linkNi.addEventListener('click', function(e){
+    teamNi.classList.toggle('team__acco-item--active');
+    teamDr.classList.remove('team__acco-item--active');
+    teamRd.classList.remove('team__acco-item--active');
+    teamDf.classList.remove('team__acco-item--active');
+});
 
 //menu acco
 var menuItem = document.querySelector('.menu-acco__item-meat');
@@ -44,6 +81,26 @@ link.addEventListener('click',function(event){
    event.preventDefault(); 
 });
 
+//reviews popup
+var btnRew = document.querySelector('.btn_bg_color_grey');
+var popupRew = document.querySelector('.reviews__popup');
+var popupClose = document.querySelector('.reviews__popup-close');
+
+btnRew.addEventListener('click', function(e){
+   e.preventDefault();
+    popupRew.classList.add('reviews__popup--active');
+});
+popupClose.addEventListener('click', function(){
+    popupRew.classList.remove('reviews__popup--active');
+});
+
+var allBtn = document.querySelectorAll('.reviews__desc > .btn_bg_color_grey');
+for(b=0;b<allBtn.length;b++){
+    allBtn[b].addEventListener('click', function(e){
+       e.preventDefault();
+       popupRew.classList.add('reviews__popup--active');
+    });
+};
 //radio buttons
 var cash = document.querySelector('.cash');
 var card = document.querySelector('.card');

@@ -24,6 +24,9 @@
 }
 .section__title_padding_bottom{
     padding-bottom: rem(40px);
+    @include tablets{
+        padding-bottom: rem(20px);
+    }
 }
 .section__title_color_white{
     color: rgb(255, 255, 255);
