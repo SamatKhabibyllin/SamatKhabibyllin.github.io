@@ -1589,16 +1589,53 @@ a {
   margin-top: -0.625rem; }
 
 .carousel-next {
-  right: 90%;
+  right: 95%;
   -webkit-transform: rotate(225deg);
   -ms-transform: rotate(225deg);
   transform: rotate(225deg); }
 
 .carousel-prev {
-  left: 90%;
+  left: 95%;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg); }
+
+.composition {
+  width: 5.625rem;
+  height: 5.625rem;
+  border-radius: 0.3125rem;
+  background: #f08c33;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: -2.5rem; }
+  .composition:hover .composition-hover {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+
+.icon-burger {
+  width: 3.125rem;
+  height: 3.125rem;
+  fill: white; }
+
+.composition__title {
+  color: white;
+  font-size: 0.875rem;
+  font-family: 'Gagalin';
+  text-transform: uppercase; }
 
 .carousel__conatainer {
   height: 100%;
@@ -1609,8 +1646,7 @@ a {
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  position: absolute; }
+  display: flex; }
 
 .carousel__item {
   display: -webkit-box;
@@ -1621,21 +1657,66 @@ a {
   align-items: center;
   width: 58.75rem;
   height: 23.875rem; }
+  @media screen and (max-width: 768px) {
+    .carousel__item {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      height: 100%; } }
 
 .carousel__image {
   width: 50%;
   height: 90%; }
+  @media screen and (max-width: 768px) {
+    .carousel__image {
+      width: 70%;
+      margin-top: 0.625rem; } }
+  @media screen and (max-width: 480px) {
+    .carousel__image {
+      margin-top: 0; } }
 
 .carousel__pic {
   width: 98%; }
 
 .carousel__desc {
   width: 50%; }
+  @media screen and (max-width: 768px) {
+    .carousel__desc {
+      width: 100%;
+      text-align: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; } }
+  @media screen and (max-width: 768px) {
+    .carousel__desc h2 {
+      width: 70%; } }
+  @media screen and (max-width: 480px) {
+    .carousel__desc h2 {
+      width: 90%; } }
 
 .carousel__text {
   font-size: 0.875rem;
   color: white;
   margin-top: 3.125rem; }
+  @media screen and (max-width: 768px) {
+    .carousel__text {
+      width: 80%;
+      margin-top: 0.9375rem; } }
+  @media screen and (max-width: 480px) {
+    .carousel__text {
+      width: 95%;
+      margin-top: 1.875rem; } }
 
 .carousel__desc__bottom {
   display: -webkit-box;
@@ -1645,6 +1726,12 @@ a {
   -ms-flex-align: end;
   align-items: flex-end;
   margin-top: 2.5rem; }
+  @media screen and (max-width: 768px) {
+    .carousel__desc__bottom {
+      margin-top: 0.9375rem; } }
+  @media screen and (max-width: 480px) {
+    .carousel__desc__bottom {
+      margin-top: 1.875rem; } }
 
 .carousel__price {
   display: -webkit-box;
@@ -1714,6 +1801,10 @@ a {
   margin-left: auto;
   font-size: 0.875rem;
   color: #2f3234; }
+
+.composition-icon {
+  width: 1.875rem;
+  height: 1.875rem; }
 
 .reviews__popup {
   display: none; }

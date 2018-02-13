@@ -6,33 +6,74 @@
 .carousel-list{
     overflow: hidden;
     display: flex;
-    position: absolute;
 }
 .carousel__item{
     display: flex;
     align-items: center;
     width: rem(940px);
     height: rem(382px);
+    @include tablets{
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+    }
 }
 .carousel__image{
     width: 50%;
     height: 90%;
+    @include tablets{
+        width: 70%;
+        margin-top: rem(10px);
+    }
+    @include phones{
+        margin-top: 0;
+    }
+    
 }
 .carousel__pic{
     width: 98%;
 }
 .carousel__desc{
     width: 50%;
+    @include tablets{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h2{
+        @include tablets{
+            width: 70%;
+        }
+        @include phones{
+            width: 90%;
+        }
+    }
 }
 .carousel__text{
     font-size: rem(14px);
     color: rgb(255, 255, 255);
     margin-top: rem(50px);
+    @include tablets{
+        width: 80%;
+        margin-top: rem(15px);
+    }
+    @include phones{
+        width: 95%;
+        margin-top: rem(30px);
+    }
 }
 .carousel__desc__bottom{
     display: flex;
     align-items: flex-end;
     margin-top: rem(40px);
+    @include tablets{
+        margin-top: rem(15px);
+    }
+    @include phones{
+        margin-top: rem(30px);
+    }
 }
 .carousel__price{
     display: flex;
