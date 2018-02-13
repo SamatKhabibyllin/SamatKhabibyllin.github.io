@@ -5,7 +5,7 @@
     align-items: center;
     @include tablets{
         flex-direction: column;
-        padding-top: 15px;
+        padding-top: rem(15px);
     }
     @include phones{
         padding-top: 0;

@@ -73,7 +73,4 @@ footer{
 .section{
     height: 100%;
     min-height: rem(650px);
-    @include phones{
-        min-height: 100%;
-    }
 }

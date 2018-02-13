@@ -510,9 +510,6 @@ footer {
 .section {
   height: 100%;
   min-height: 40.625rem; }
-  @media screen and (max-width: 480px) {
-    .section {
-      min-height: 100%; } }
 
 a {
   text-decoration: none; }
@@ -735,7 +732,7 @@ a {
       -webkit-box-direction: normal;
       -ms-flex-direction: column;
       flex-direction: column;
-      padding-top: 15px; } }
+      padding-top: 0.9375rem; } }
   @media screen and (max-width: 480px) {
     .hero__content {
       padding-top: 0; } }
