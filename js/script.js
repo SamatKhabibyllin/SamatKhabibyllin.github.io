@@ -48,8 +48,8 @@ $(document).on({
             case 38: scrollToSection('down');
         }
     },
-//    touchmove: e => e.preventDefault();
-})
+    touchmove: e => e.preventDefault();
+});
 $(document).swipe( {
     swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
         //плагин возвращает фактическое движение страницы 
