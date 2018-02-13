@@ -5,8 +5,6 @@
     <title>Бургер</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/css/widgets/owl.carousel.min.css">
-    <link rel="stylesheet" href="/css/widgets/owl.theme.default.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
@@ -18,7 +16,7 @@
     <![end if]-->
    <div class="wrapper">
        <div class="maincontent">
-           <section class="section hero">
+           <section class="section hero active">
                <div class="container hero__container">
                    <header class="header">
                        <a href="#" class="logo">
@@ -63,7 +61,7 @@
                        <li class="best__item">
                            <div class="best__pic">
                                <svg class="best__icon_fill_red">
-                                   <use xlink:href="/img/icons/sprite-svg/sprite.svg#meat"></use>
+                                   <use xlink:href="../img/icons/sprite-svg/sprite.svg#meat"></use>
                                </svg>
                            </div>
                            <div class="best__info">
@@ -76,7 +74,7 @@
                        <li class="best__item">
                            <div class="best__pic">
                                <svg class="best__icon_fill_yellow">
-                                   <use xlink:href="/img/icons/sprite-svg/sprite.svg#hand"></use>
+                                   <use xlink:href="../img/icons/sprite-svg/sprite.svg#hand"></use>
                                </svg>
                            </div>
                            <div class="best__info">
@@ -89,7 +87,7 @@
                        <li class="best__item">
                            <div class="best__pic">
                                <svg class="best__icon_fill_green">
-                                   <use xlink:href="/img/icons/sprite-svg/sprite.svg#natural"></use>
+                                   <use xlink:href="../img/icons/sprite-svg/sprite.svg#natural"></use>
                                </svg>
                            </div>
                            <div class="best__info">
@@ -104,87 +102,67 @@
            </section>
            
            <section class="section carousel">
-             <div class="container carousel-container">
-                 <ul class="carousel-list">
-                      <div class="arrow arrow-left"></div>
-                      <div class="icon-composition">
-                        <svg class="icon-carousel-burger">
-                           <use xlink:href="/img/icons/sprite-svg/sprite.svg#burger"></use>
-                        </svg>
-                       <div class="icon-composition-title">состав</div>
-                       <div class="composition-hover">
-                          <ul class="composition-hover-list">
-                              <li class="composition-hover__item">
-                                  <svg class="composition-icon composition-icon_beef">
-                                    <use xlink:href="/img/icons/sprite-svg/sprite.svg#beef"></use>
-                                  </svg>
-                                  <div class="composition-hover__title">Говядина</div>
-                                  <div class="composition-hover__weight">300г.</div>
-                              </li>
-                              <li class="composition-hover__item">
-                                  <svg class="composition-icon composition-icon_buns">
-                                    <use xlink:href="/img/icons/sprite-svg/sprite.svg#buns"></use>
-                                  </svg>
-                                  <div class="composition-hover__title">Булочки</div>
-                                  <div class="composition-hover__weight">100г.</div>
-                              </li>
-                              <li class="composition-hover__item">
-                                  <svg class="composition-icon composition-icon_salad">
-                                    <use xlink:href="/img/icons/sprite-svg/sprite.svg#salad"></use>
-                                  </svg>
-                                  <div class="composition-hover__title">Зелень</div>
-                                  <div class="composition-hover__weight">70г.</div>
-                              </li>
-                              <li class="composition-hover__item">
-                                  <svg class="composition-icon composition-icon_sauce">
-                                    <use xlink:href="/img/icons/sprite-svg/sprite.svg#sauce"></use>
-                                  </svg>
-                                  <div class="composition-hover__title">Соус</div>
-                                  <div class="composition-hover__weight">150г.</div>
-                              </li>
-                              <li class="composition-hover__item">
-                                  <svg class="composition-icon composition-icon_cucumber">
-                                    <use xlink:href="/img/icons/sprite-svg/sprite.svg#cucumber"></use>
-                                  </svg>
-                                  <div class="composition-hover__title">Овощи</div>
-                                  <div class="composition-hover__weight">200г.</div>
-                              </li>
-                              <li class="composition-hover__item">
-                                  <svg class="composition-icon composition-icon_cheese">
-                                    <use xlink:href="/img/icons/sprite-svg/sprite.svg#cheese"></use>
-                                  </svg>
-                                  <div class="composition-hover__title">Сыр</div>
-                                  <div class="composition-hover__weight">80г.</div>
-                              </li>
-                          </ul>
-                      </div>
-                      </div>
-                       <li class="carousel__item">
+              <a href="" class="carousel-next"></a>
+               <div class="container carousel__conatainer">
+                   <ul class="carousel-list">
+                       <li class="carousel__item carousel__item_1">
                            <div class="carousel__image">
-                               <img src="/img/content/black-burger.jpg" alt="" class="carousel__pic">
+                               <img src="./img/content/black-burger.jpg" alt="" class="carousel__pic">
                            </div>
                            <div class="carousel__desc">
                                <h2 class="section__title section__title_color_white">dark beef burger</h2>
                                <div class="carousel__text">
-                                   <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</p>
+                                  <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</p>
                                </div>
-                               <div class="carousel__bottom">
-                                   <span class="price-num">500</span><span class="price-rub">рублей</span>
-                                   <a href="#" class="btn__carosel">заказать</a>
+                               <div class="carousel__desc__bottom">
+                                   <div class="carousel__price">
+                                       <div class="carousel__price_num">500</div>
+                                       <div class="carousel__price_rub">рублей</div>
+                                   </div>
+                                   <a href="" class="carousel__btn">заказать</a>
                                </div>
-                            </div>
-                       </li>
-                       <div class="icon-kal">
-                           <svg class="icon-carousel-kkal">
-                             <use xlink:href="/img/icons/sprite-svg/sprite.svg#kkal"></use>
-                          </svg>
-                          <div class="icon-kal__num">1200</div>
-                          <div class="icon-kal__kkal">ккал</div>
-                       </div>
-                       <div class="arrow arrow-right"></div>
-                   </ul>
-                </div>
-            </section>
+                           </div>
+                        </li>
+                        <li class="carousel__item carousel__item_1">
+                           <div class="carousel__image">
+                               <img src="./img/content/black-burger.jpg" alt="" class="carousel__pic">
+                           </div>
+                           <div class="carousel__desc">
+                               <h2 class="section__title section__title_color_white">dark beef burger</h2>
+                               <div class="carousel__text">
+                                  <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</p>
+                               </div>
+                               <div class="carousel__desc__bottom">
+                                   <div class="carousel__price">
+                                       <div class="carousel__price_num">500</div>
+                                       <div class="carousel__price_rub">рублей</div>
+                                   </div>
+                                   <a href="" class="carousel__btn">заказ</a>
+                               </div>
+                           </div>
+                        </li>
+                        <li class="carousel__item carousel__item_1">
+                           <div class="carousel__image">
+                               <img src="./img/content/black-burger.jpg" alt="" class="carousel__pic">
+                           </div>
+                           <div class="carousel__desc">
+                               <h2 class="section__title section__title_color_white">dark beef burger</h2>
+                               <div class="carousel__text">
+                                  <p>Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь с добавлением экзотического соуса чураско.</p>
+                               </div>
+                               <div class="carousel__desc__bottom">
+                                   <div class="carousel__price">
+                                       <div class="carousel__price_num">500</div>
+                                       <div class="carousel__price_rub">рублей</div>
+                                   </div>
+                                   <a href="" class="carousel__btn">заказывай</a>
+                               </div>
+                           </div>
+                        </li>
+                    </ul>
+               </div>
+               <a href="" class="carousel-prev"></a>
+           </section>
             
            <section class="section team">
                <div class="team__container">
@@ -195,7 +173,7 @@
                                <a href="#" class="team__acco-title__dr team__acco-title">дэниэл редклиф</a>
                                <div class="team__acco-content">
                                    <div class="team__acco-pic">
-                                       <img src="/img/content/team__acco-rj.jpg" alt="" class="team__acco-avatar">
+                                       <img src="../img/content/team__acco-rj.jpg" alt="" class="team__acco-avatar">
                                    </div>
                                    <div class="team__acco-desc">
                                        <h3 class="team__acco-article-title">Оператор</h3>
@@ -209,7 +187,7 @@
                                <a href="#" class="team__acco-title__rd team__acco-title">ричард джеймс</a>
                                <div class="team__acco-content">
                                    <div class="team__acco-pic">
-                                       <img src="/img/content/team__acco-rj.jpg" alt="" class="team__acco-avatar">
+                                       <img src="../img/content/team__acco-rj.jpg" alt="" class="team__acco-avatar">
                                    </div>
                                    <div class="team__acco-desc">
                                        <h3 class="team__acco-article-title">Оператор</h3>
@@ -223,7 +201,7 @@
                                <a href="#" class="team__acco-title__df team__acco-title">джек финн</a>
                                <div class="team__acco-content">
                                    <div class="team__acco-pic">
-                                       <img src="/img/content/team__acco-rj.jpg" alt="" class="team__acco-avatar">
+                                       <img src="../img/content/team__acco-rj.jpg" alt="" class="team__acco-avatar">
                                    </div>
                                    <div class="team__acco-desc">
                                        <h3 class="team__acco-article-title">Оператор</h3>
@@ -237,7 +215,7 @@
                                <a href="#" class="team__acco-title__ni team__acco-title">николай иванов</a>
                                <div class="team__acco-content">
                                    <div class="team__acco-pic">
-                                       <img src="/img/content/team__acco-rj.jpg" alt="" class="team__acco-avatar">
+                                       <img src="../img/content/team__acco-rj.jpg" alt="" class="team__acco-avatar">
                                    </div>
                                    <div class="team__acco-desc">
                                        <h3 class="team__acco-article-title">Оператор</h3>
@@ -257,7 +235,7 @@
                    <div class="section__title section__title_color_white">меню</div>
                </div>
                <ul class="menu-acco">
-                   <li class="menu-acco__item menu-acco__item-meat" style="background-image: url('/img/content/meat.jpg')">
+                   <li class="menu-acco__item menu-acco__item-meat" style="background-image: url('../img/content/meat.jpg')">
                        <a href="#" class="menu-acco__link">
                           <div class="acco__title">для мясоедов</div>
                        </a>
@@ -266,14 +244,14 @@
                        <p>Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
                        Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений.Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.</p>
                    </li>
-                    <li class="menu-acco__item menu-acco__item-vegan" style="background-image: url('/img/content/vegan.jpg')">
+                    <li class="menu-acco__item menu-acco__item-vegan" style="background-image: url('../img/content/vegan.jpg')">
                        <a href="#" class="menu-acco__link"><div class="acco__title">вегетарианское</div></a>
                     </li>
                    <li class="acco__text acco__text-vagan">
                        <p>Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений. Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову, однако механизм сочленений неустойчив. Модальность высказывания, как справедливо считает И.Гальперин, пространственно выбирает метр.
                        Речевой акт редуцирует диалектический характер. Развивая эту тему, заимствование редуцирует конструктивный механизм сочленений.Лирический субъект начинает диссонансный анжамбеман. Наш современник стал особенно чутко относиться к слову.</p>
                    </li>
-                    <li class="menu-acco__item" style="background-image: url('/img/content/diet.jpg')">
+                    <li class="menu-acco__item" style="background-image: url('../img/content/diet.jpg')">
                        <a href="#" class="menu-acco__link"><div class="acco__title">диетическое</div></a>
                     </li>
                     <li class="acco__text">
@@ -297,7 +275,7 @@
                          </div>
                      </div>
                    </div>
-                 <li class="reviews__item" style="background-image: url('/img/content/reviews1.jpg')">
+                 <li class="reviews__item" style="background-image: url('../img/content/reviews1.jpg')">
                       <div class="reviews__hover">
                           <div class="reviews__desc">
                               <div class="reviews__title">константин спилберг</div>
@@ -309,7 +287,7 @@
                       </div>
                        <img src="/img/content/reviews1.jpg" alt="изображение посетителя оставившего отзыв" class="reviews-img">
                    </li>
-                   <li class="reviews__item" style="background-image: url('/img/content/reviews2.jpg')">
+                   <li class="reviews__item" style="background-image: url('../img/content/reviews2.jpg')">
                       <div class="reviews__hover">
                           <div class="reviews__desc">
                               <div class="reviews__title">константин спилберг</div>
@@ -321,7 +299,7 @@
                       </div>
                        <img src="/img/content/reviews2.jpg" alt="изображение посетителя оставившего отзыв" class="reviews-img">
                    </li>
-                   <li class="reviews__item" style="background-image: url('/img/content/reviews3.jpg')">
+                   <li class="reviews__item" style="background-image: url('../img/content/reviews3.jpg')">
                       <div class="reviews__hover">
                           <div class="reviews__desc">
                               <div class="reviews__title">константин спилберг</div>
@@ -333,7 +311,7 @@
                       </div>
                        <img src="/img/content/reviews3.jpg" alt="изображение посетителя оставившего отзыв" class="reviews-img">
                    </li>
-                   <li class="reviews__item" style="background-image: url('/img/content/reviews4.jpg')">
+                   <li class="reviews__item" style="background-image: url('../img/content/reviews4.jpg')">
                       <div class="reviews__hover">
                           <div class="reviews__desc">
                               <div class="reviews__title">константин спилберг</div>
@@ -345,7 +323,7 @@
                       </div>
                        <img src="/img/content/reviews4.jpg" alt="изображение посетителя оставившего отзыв" class="reviews-img">
                    </li>
-                   <li class="reviews__item" style="background-image: url('/img/content/reviews5.jpg')">
+                   <li class="reviews__item" style="background-image: url('../img/content/reviews5.jpg')">
                       <div class="reviews__hover">
                           <div class="reviews__desc">
                               <div class="reviews__title">константин спилберг</div>
@@ -369,7 +347,7 @@
                       </div>
                        <img src="/img/content/reviews6.jpg" alt="изображение посетителя оставившего отзыв" class="reviews-img">
                    </li>
-                   <li class="reviews__item" style="background-image: url('/img/content/reviews7.jpg')">
+                   <li class="reviews__item" style="background-image: url('../img/content/reviews7.jpg')">
                       <div class="reviews__hover">
                           <div class="reviews__desc">
                               <div class="reviews__title">константин спилберг</div>
@@ -381,7 +359,7 @@
                       </div>
                        <img src="/img/content/reviews7.jpg" alt="изображение посетителя оставившего отзыв" class="reviews-img">
                    </li>
-                   <li class="reviews__item" style="background-image: url('/img/content/reviews8.jpg')">
+                   <li class="reviews__item" style="background-image: url('../img/content/reviews8.jpg')">
                       <div class="reviews__hover">
                           <div class="reviews__desc">
                               <div class="reviews__title">константин спилберг</div>
@@ -487,7 +465,7 @@
                                </div>
                                <div class="footer__tel">
                                <svg class="phone-icon">
-                                    <use xlink:href="/img/icons/sprite-svg/sprite.svg#phone"></use>
+                                    <use xlink:href="../img/icons/sprite-svg/sprite.svg#phone"></use>
                                   </svg>
                                 +7 (812) 377-13-77
                                </div>
@@ -498,22 +476,22 @@
                                <li class="icon-item">
                                    <a class="icon__link" href="#">
                                 <svg class="icon">
-                                    <use xlink:href="/img/icons/sprite-svg/sprite.svg#vk"></use>
+                                    <use xlink:href="../img/icons/sprite-svg/sprite.svg#vk"></use>
                                 </svg>
                             </a>
                             <a href="#" class="icon__link">
                                 <svg class="icon">
-                                    <use xlink:href="/img/icons/sprite-svg/sprite.svg#fb"></use>
+                                    <use xlink:href="../img/icons/sprite-svg/sprite.svg#fb"></use>
                                 </svg>
                             </a>
                             <a href="#" class="icon__link">
                                 <svg class="icon">
-                                    <use xlink:href="/img/icons/sprite-svg/sprite.svg#inst"></use>
+                                    <use xlink:href="../img/icons/sprite-svg/sprite.svg#inst"></use>
                                 </svg>
                             </a>
                             <a href="#" class="icon__link">
                                 <svg class="icon">
-                                    <use xlink:href="/img/icons/sprite-svg/sprite.svg#twitter"></use>
+                                    <use xlink:href="../img/icons/sprite-svg/sprite.svg#twitter"></use>
                                 </svg>
                             </a>
                                </li>
@@ -534,11 +512,14 @@
         <li class="navigation__item"><a href="" class="navigation__link"></a></li>
         <li class="navigation__item"><a href="" class="navigation__link"></a></li>
     </ul>
+    
     <script
   src="http://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-   <script src="/js/"></script>
-    <script src="/js/script.js"></script>
+            crossorigin="anonymous"></script>
+            
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js" integrity="sha256-oQ1+24/TB/RpvqqnWnJeS9riShuGf1vHlg8B4lyZ2OE=" crossorigin="anonymous"></script>
+
+    <script src="./js/script.js"></script>
 </body>
 </html>

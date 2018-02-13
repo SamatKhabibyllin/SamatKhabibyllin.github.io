@@ -1,3 +1,63 @@
+//one page scroll
+const sections = $('.section');
+const display = $('.maincontent');
+let inScroll = false;
+
+const perfomTransition = sectionEq =>{
+    const position = `${sectionEq * -100}%`
+    
+    if(!inScroll){
+        inScroll = true;
+        
+        sections.eq(sectionEq).addClass('active')
+    .siblings().removeClass('active');
+    display.css({
+        'transform' : `translate(0,${position})`,
+        '-webkit-transform' : `translate(0,${position})`
+    })
+        setTimeout(() => {
+            inScroll = false;
+        },1300); // продолжительность анимации + 300 ms для инерции
+    }
+}
+
+const scrollToSection = direction =>{
+    const activeSection = sections.filter('.active');
+    const nextSection = activeSection.next();
+    const prevSection = activeSection.prev();
+    
+    if(direction === 'up' && nextSection.length){
+        perfomTransition(nextSection.index())
+    }
+    if(direction === 'down' && prevSection.length){
+        perfomTransition(prevSection.index())
+    }
+}
+
+$(document).on({
+  wheel: e =>{
+      const deltaY = e.originalEvent.deltaY;
+      const direction = deltaY > 0 ? 'up' : 'down';
+      scrollToSection(direction);
+      },
+    keydown: e =>{
+        switch(e.keyCode){
+            //вниз
+            case 40: scrollToSection('up');
+            //вверх
+            case 38: scrollToSection('down');
+        }
+    },
+//    touchmove: e => e.preventDefault();
+})
+$(document).swipe( {
+    swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+        //плагин возвращает фактическое движение страницы 
+    const scrollDirection = direction === 'down' ? 'up' : 'down'; 
+    scrollToSection(direction); 
+    }
+  });
+
 //main nav
 var ham = document.querySelector('.ham__btn');
 var nav = document.querySelector('.nav-list');
@@ -131,4 +191,17 @@ reset.addEventListener('click', function(){
     check.classList.remove('check--active');
     cashCircle.classList.remove('circle__small--active');
     cardCircle.classList.remove('circle__small--active');
+});
+
+//carousel
+const carouselList = document.querySelector('.carousel-list');
+const carouselNext = document.querySelector('.carousel-next');
+const carouselPrev = document.querySelector('.carousel-prev');
+
+carouselPrev.addEventListener('click',function(e){
+   e.preventDefault();
+    carouselList.style.left = '-100%';
+});
+carouselNext.addEventListener('click',function(e){
+   e.preventDefault(); 
 });

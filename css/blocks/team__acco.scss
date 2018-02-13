@@ -4,6 +4,9 @@
     flex-direction: column;
     height: 100%;
     padding-top: rem(100px);
+    @include phones{
+        width: 90%;
+    }
 }
 .team__acco-item{
     display: flex;
@@ -55,6 +58,7 @@
         border-top-color: $yellow;
         border-bottom-width: 0;
         margin-right: 10px;
+        transition: all .5s;
     }
     @include tablets{
         font-size: rem(26px);
