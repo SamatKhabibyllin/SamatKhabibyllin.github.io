@@ -61,7 +61,7 @@
     }
     @include phones{
         width: 95%;
-        margin-top: rem(30px);
+        margin-top: 0;
     }
 }
 .carousel__desc__bottom{
@@ -72,7 +72,7 @@
         margin-top: rem(15px);
     }
     @include phones{
-        margin-top: rem(30px);
+        margin-top: 0;
     }
 }
 .carousel__price{
