@@ -3,6 +3,14 @@ const sections = $('.section');
 const display = $('.maincontent');
 let inScroll = false;
 
+const md = new MobileDetect(window.navigator.userAgent);
+const isMobile = md.mobile();
+
+const setActiveMenuItem = itemEq =>{
+    $('.navigation__item').eq(itemEq).addClass('.navigation__item_active')
+    .siblings().removeClass('.navigation__item_active');
+} 
+
 const perfomTransition = sectionEq =>{
     const position = `${sectionEq * -100}%`
     
@@ -17,7 +25,8 @@ const perfomTransition = sectionEq =>{
     })
         setTimeout(() => {
             inScroll = false;
-        },1300); // продолжительность анимации + 300 ms для инерции
+            setActiveMenuItem(sectionEq);
+        },800); // продолжительность анимации + 300 ms для инерции
     }
 }
 
@@ -50,13 +59,31 @@ $(document).on({
     },
 //    touchmove: e => e.preventDefault();
 });
-$(document).swipe( {
+
+$('[data-scroll-to]').on('click', e =>{
+    e.preventDefault();
+    
+    const target = $(e.currentTarget).attr('data-scroll-to');
+    perfomTransition(target);
+})
+
+if(isMobile){
+    $(document).swipe( {
     swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
         //плагин возвращает фактическое движение страницы 
     const scrollDirection = direction === 'down' ? 'up' : 'down'; 
     scrollToSection(direction); 
     }
   });
+}
+
+//$(document).swipe( {
+//    swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
+//        //плагин возвращает фактическое движение страницы 
+//    const scrollDirection = direction === 'down' ? 'up' : 'down'; 
+//    scrollToSection(direction); 
+//    }
+//  });
 
 //main nav
 var ham = document.querySelector('.ham__btn');
@@ -78,6 +105,8 @@ ham.addEventListener('click', function(e){
     hamCloseOne.classList.toggle('ham__btn-decor_transform_rotate_1');
     hamCloseTwo.classList.toggle('ham__btn-decor_transform_rotate_2');
 });
+
+// nav
 
 //team acco
 var teamLink = document.querySelectorAll('li > .team__acco-title');

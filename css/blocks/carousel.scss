@@ -1,6 +1,9 @@
 .carousel{
     background: linear-gradient(90deg,#f3a43a, #f19d39);
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 //btns

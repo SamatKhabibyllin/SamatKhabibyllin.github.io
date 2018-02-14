@@ -1,31 +1,31 @@
 .navigation{
     position: fixed;
-    left: 1159px;
-    top: 97px;
+    left: rem(1050px);
+    top: rem(97px);
     @include tablets{
         display: none;
     }
 }
 .navigation__item{
-    width: 16px;
-    height: 16px;
-    border: 1px solid transparent;
+    width: rem(16px);
+    height: rem(16px);
+    border: rem(1px) solid transparent;
     border-radius: 50%;
     text-align: center;
-    margin-bottom: 7px;
+    margin-bottom: rem(7px);
 }
 .navigation__item_active{
-    width: 16px;
-    height: 16px;
+    width: rem(16px);
+    height: rem(16px);
     border: 1px solid rgb(255, 255, 255);
     border-radius: 50%;
     text-align: center;
 }
 .navigation__link{
-    width: 6px;
-    height: 6px;
+    width: rem(6px);
+    height: rem(6px);
     border-radius: 50%;
     background: rgb(255, 255, 255);
     display: inline-block;
-    margin-bottom: 6px;
+    margin-bottom: rem(6px);
 }
