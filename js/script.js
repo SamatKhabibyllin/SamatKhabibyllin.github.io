@@ -77,14 +77,6 @@ if(isMobile){
   });
 }
 
-//$(document).swipe( {
-//    swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-//        //плагин возвращает фактическое движение страницы 
-//    const scrollDirection = direction === 'down' ? 'up' : 'down'; 
-//    scrollToSection(direction); 
-//    }
-//  });
-
 //main nav
 var ham = document.querySelector('.ham__btn');
 var nav = document.querySelector('.nav-list');
@@ -106,7 +98,72 @@ ham.addEventListener('click', function(e){
     hamCloseTwo.classList.toggle('ham__btn-decor_transform_rotate_2');
 });
 
-// nav
+//go down btn animate
+const goDownBtn = document.querySelector('.go-down-btn');
+var currentBottom = 40;
+const step = 5;
+
+intervalId = setInterval(function(){
+//    currentBottom += step;
+//    goDownBtn.style.bottom = currentBottom + 'px';
+    
+},2000);
+
+//carousel
+
+$(function(){
+    
+    var moveSlide = function(container,slideNum){
+        var 
+           items = container.find('.slider__item');
+           activeSlide = items.filter('.slider-active');
+           reqItem = items.eq(slideNum);
+           reqIndex = reqItem.index();
+           sliderList = container.find('.slider-list');
+           duration = 500;
+       
+       if(reqItem.length){
+           sliderList.animate({
+           'left' : -reqIndex * 100 + '%'
+       },duration, function(){
+           activeSlide.removeClass('slider-active');
+           reqItem.addClass('slider-active');
+       });
+       };
+    };
+    
+
+    
+    $('.carousel-arrow').on('click', function(e){
+       e.preventDefault();
+        
+        var $this = $(this),
+            container = $this.closest('.carousel__container'),
+            items = $('.slider__item',container),
+            activeItem = items.filter('.slider-active'),
+            nextItem = activeItem.next();
+            prevItem = activeItem.prev();
+        
+        if($this.hasClass('next-arrow')){ //вперед
+            if(nextItem.length){
+                moveSlide(container,nextItem.index());
+            }else{
+                moveSlide(container,items.first().index());
+            }
+            
+        
+        
+        }else{//назад
+            if(prevItem.length){
+                moveSlide(container,prevItem.index());
+            }else{
+                moveSlide(container,items.last().index());
+            }
+        }
+        
+    });
+    
+});
 
 //team acco
 var teamLink = document.querySelectorAll('li > .team__acco-title');
@@ -155,19 +212,49 @@ linkNi.addEventListener('click', function(e){
 });
 
 //menu acco
-var menuItem = document.querySelector('.menu-acco__item-meat');
-var menuText = document.querySelector('.acco__text-meat');
-var title = document.querySelector('.acco__title');
+var menuItem = document.querySelectorAll('ul > .menu-acco__item');
+var menuText = document.querySelectorAll('ul > .acco__text');
+var title = document.querySelectorAll('.acco__title');
 var link = document.querySelector('.menu-acco__link');
+var menuContTitle = document.querySelector('.menu__title-container');
 
-menuItem.addEventListener('click',function(){
-   console.log('клик на меню');
-   title.classList.toggle('acco__title--active');
-   menuText.classList.toggle('acco__text--active');
+menuItem[0].addEventListener('click',function(){
+   title[0].classList.toggle('acco__title--active');
+   menuText[0].classList.toggle('acco__text--active');
+    
+    title[1].classList.remove('acco__title--active');
+   menuText[1].classList.remove('acco__text--active');
+    
+     title[2].classList.remove('acco__title--active');
+   menuText[2].classList.remove('acco__text--active');
+    
+    menuContTitle.style.display = 'none';
 });
 
-link.addEventListener('click',function(event){
-   event.preventDefault(); 
+menuItem[1].addEventListener('click',function(){
+   title[1].classList.toggle('acco__title--active');
+   menuText[1].classList.toggle('acco__text--active');
+    
+    title[0].classList.remove('acco__title--active');
+   menuText[0].classList.remove('acco__text--active');
+    
+    title[2].classList.remove('acco__title--active');
+   menuText[2].classList.remove('acco__text--active');
+});
+
+menuItem[2].addEventListener('click',function(){
+   title[2].classList.toggle('acco__title--active');
+   menuText[2].classList.toggle('acco__text--active');
+    
+    title[0].classList.remove('acco__title--active');
+   menuText[0].classList.remove('acco__text--active');
+    
+    title[1].classList.remove('acco__title--active');
+   menuText[1].classList.remove('acco__text--active');
+});
+
+link.addEventListener('click', function(event){
+   event.preventDefault();
 });
 
 //reviews popup
@@ -222,15 +309,8 @@ reset.addEventListener('click', function(){
     cardCircle.classList.remove('circle__small--active');
 });
 
-//carousel
-const carouselList = document.querySelector('.carousel-list');
-const carouselNext = document.querySelector('.carousel-next');
-const carouselPrev = document.querySelector('.carousel-prev');
-
-carouselPrev.addEventListener('click',function(e){
-   e.preventDefault();
-    carouselList.style.left = '-100%';
-});
-carouselNext.addEventListener('click',function(e){
-   e.preventDefault(); 
-});
+//go down
+const goDown = document.querySelector('.go-down-btn');
+goDown.addEventListener('click',function(e){
+    e.preventDefault();
+})

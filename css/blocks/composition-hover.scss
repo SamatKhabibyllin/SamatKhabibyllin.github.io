@@ -1,3 +1,11 @@
+.composition{
+    &:hover{
+        .composition-hover{
+            display: flex;
+            opacity: 1;
+        }
+    }
+}
 .composition-hover{
     position: absolute;
     display: none;
@@ -7,7 +15,10 @@
     padding: rem(15px) rem(20px);
     border-radius: rem(5px);
     width: rem(270px);
-    opacity: 1;
+    opacity: 0;
+    @include phones{
+        width: rem(250px);
+    }
 }
 .composition-hover-list{
     width: 100%;
@@ -38,5 +49,21 @@
     width: rem(30px);
     height: rem(30px);
 }
-
-
+.composition-icon_beef{
+    fill: rgb(226, 80, 40);
+}
+.composition-icon_buns{
+    fill: rgb(248, 180, 58);
+}
+.composition-icon_salad{
+    fill: rgb(138, 192, 62);
+}
+.composition-icon_sauce{
+    fill: rgb(226, 80, 40);
+}
+.composition-icon_cucumber{
+    fill: rgb(138, 192, 62);
+}
+.composition-icon_cheese{
+    fill: rgb(248, 180, 58);
+}

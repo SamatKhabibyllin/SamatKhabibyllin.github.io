@@ -1,61 +1,77 @@
 .carousel{
     background: linear-gradient(90deg,#f3a43a, #f19d39);
-    position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
-
-//btns
- 
-.carousel-next,.carousel-prev{
-    display: inline-block;
-    width: rem(20px);
-    height: rem(20px);
-    border-top: rem(2px) solid rgb(255, 255, 255);
-    border-right: rem(2px) solid rgb(255, 255, 255);
-    background: transparent;
-    transform: rotate(135deg);
-    position: absolute;
-    border-radius: rem(3px);
-    top: 50%;
-    margin-top: rem(-10px);
+.carousel__container{
+    display: flex;
+    width: 100%;
 }
-.carousel-next{
-    right: 95%;
-    transform: rotate(225deg);
-}
-.carousel-prev{
-    left: 95%;
-    transform: rotate(45deg);
-}
-// composition
+//composition
 .composition{
-    width: rem(90px);
-    height: rem(90px);
-    border-radius: rem(5px);
-    background: rgb(240, 140, 51);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    width: rem(90px);
+    height: rem(90px);
+    border-radius: rem(5px);
+    background: rgb(240, 140, 51);
+    position: absolute;
+    top: 0;
+    left: 0;
     cursor: pointer;
-    position: relative;
-    margin-bottom: rem(-40px);
-    &:hover{
-        .composition-hover{
-            display: flex;
-        }
+    @include phones{
+        width: rem(75px);
+        height: rem(75px);
     }
 }
-.icon-burger{
+.icon__burger{
     width: rem(50px);
     height: rem(50px);
     fill: rgb(255, 255, 255);
+    @include phones{
+        width: rem(40px);
+        height: rem(40px);
+    }
 }
 .composition__title{
     color: rgb(255, 255, 255);
-    font-size: rem(14px);
+}
+//kkal
+.kkal{
+    max-height: rem(90px);
+    max-width: rem(90px);
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+    left: 0;
+    @include tablets{
+        top: 0;
+        left: 80%;
+    }
+    @include phones{
+        left: 80%;
+    }
+}
+kkal__icon{
+    position: relative;
+}
+.icon__kkal{
+    width: rem(50px);
+    height: rem(50px);
+    fill: rgba(255, 255, 255, 0.502);
+}
+.kkal__num{
+    color: rgba(255, 255, 255, 0.502);
+    font-size: rem(20px);
     font-family: 'Gagalin';
-    text-transform: uppercase;
+    position: absolute;
+    top: 25%;
+    left: 16%;
+}
+.kkal__title{
+    color: rgba(255, 255, 255, 0.502);
+    font-family: 'Gagalin';
+    font-size: rem(14px);
 }
