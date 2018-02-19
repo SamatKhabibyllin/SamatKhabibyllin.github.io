@@ -10,8 +10,9 @@
     left: 0;
 }
 .slider__item{
-//     width: rem(920px);
-    width: 81vw;
+     width: rem(960px);
+    
+    
     @include tablets{
         width: 88vw;
     }
