@@ -4,6 +4,7 @@
     height: rem(80px);
     position: absolute;
     bottom: 0;
+    z-index: 10;
     @include phones{
         height: auto;
     }

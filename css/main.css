@@ -509,7 +509,8 @@ footer {
 
 .section {
   height: 100vh;
-  min-height: 40.625rem; }
+  min-height: 40.625rem;
+  position: relative; }
 
 a {
   text-decoration: none; }
@@ -1397,6 +1398,11 @@ a {
   background-size: cover;
   position: relative; }
 
+.map__image {
+  position: absolute;
+  width: 100%;
+  height: 100%; }
+
 .submit {
   margin-top: 1.25rem; }
 
@@ -1442,7 +1448,8 @@ a {
   background-size: cover;
   height: 5rem;
   position: absolute;
-  bottom: 0; }
+  bottom: 0;
+  z-index: 10; }
   @media screen and (max-width: 480px) {
     .footer {
       height: auto; } }
