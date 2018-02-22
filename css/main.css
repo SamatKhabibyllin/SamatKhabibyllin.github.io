@@ -1084,7 +1084,10 @@ a {
   padding: 3.75rem 5rem 0 1.875rem;
   background: rgba(47, 50, 52, 0.93);
   font-size: 0.875rem;
-  color: white; }
+  color: white;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s; }
   @media screen and (max-width: 480px) {
     .acco__text--active {
       padding: 2.5rem 3.75rem 0 0; } }
